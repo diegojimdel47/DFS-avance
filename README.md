@@ -1,22 +1,22 @@
-# Avance del reto
-[Volver al inicio](https://github.com/diegojimdel47/DFS-avance)
+# Avance del proyecto
+[Volver al inicio](https://github.com/diegojimdel47/DFS-avance/tree/main)
 ## Diagrama
 ![alt text](Captura_diagrama.png)
 ## Explicación del diseño
-En este programa contamos con cuatro clases:
+Dentro de nuestro diagrama y posteriormente el reto final, tendremos cuatro clases:
 - Library
 
-    Es el sistema principal de la biblioteca, básicamente administra a los usuarios, los libros y los préstamos, permite registrar nuevos libros y usuarios, iniciar préstamos y gestionar su devolución.
+    Esta clase es el centro del sistema, aqui se gestionan a los usuarios, los libros y los préstamos, se pueden registrar nuevos libros y usuarios, iniciar préstamos y gestionar las devoluciones.
 - Book
 
-    Esta clase representa a un libro dentro de la biblioteca, contiene su información básica y se encarga de controlar si un libro esta dispoible para un préstamo, y si una copia ya ha sido prestada o devuelta.
+    Aquí se represtan a los libros dentro de una biblioteca, contienen su información básica, se encargan de controlar si un libro esta dispible para un préstamo, y si una copia ha sido prestadada o devuelta.
 - User
 
-    Aquí se representa a un usuario de la biblioteca, se almacena su información básica como con los libros y lleva control de sus préstamos activos, además puede verificar si el usuario es apto para solicitar otro préstamo.
+    Con esta clase representamos al un usuario de la biblioteca, almacenamos su información como con los libros, llevamos control de los prestamos activos, y verificamos si el usuario es apto para un préstamo.
 - Loan
 
-    Por último esta clase representa el préstamo de un libro a un usuario, actuando de intermediario, almacena información como la fecha del préstamo o la de devolución, y el estado del mismo.
-## Código del menú de inicio
+    Por último la clase de prestamo actúa como intermediario entre el usuario y el libro, además almacena información como la fecha del préstamo o de la devolución y su estado.
+## Código
 ```java
 import java.util.Scanner;
 public class avance_reto {
